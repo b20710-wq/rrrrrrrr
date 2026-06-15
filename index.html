@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쌰갈렌즈 - AI 공간 분석 시스템</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Gaegu:wght@700&display=swap">
+    <style>
+        :root {
+            --wood-primary: #8B5A2B;
+            --wood-light: #D2B48C;
+            --wood-accent: #E6DCD0;
+            --bg-cream: #FAF7F2;
+            --white: #FFFFFF;
+            --text-main: #333333;
+            --text-muted: #777777;
+        }
+
+        /* 기본 스타일 및 반응형 기초 설계 */
+        body {
+            font-family: 'Gowun Dodum', sans-serif;
+            background-color: var(--bg-cream);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* 상단 바 기본 구성 */
+        header {
+            width: 100%;
+            background-color: var(--white);
+            border-bottom: 2px solid var(--wood-accent);
+            text-align: center;
+            padding: 1.5rem 0;
+            box-shadow: 0 2px 8px rgba(139,90,43,0.05);
+        }
+
+        header h1 {
+            font-family: 'Gaegu', sans-serif;
+            color: var(--wood-primary);
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.3rem 0 0 0;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px; /* 모바일 및 웹에서 심플하게 떨어지는 카드 레이아웃 */
+            padding: 1.5rem;
+            box-sizing: border-box;
+        }
+
+        /* 디자인 참고용 카드 컴포넌트 */
+        .card {
+            background-color: var(--white);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 4px 16px rgba(139,90,43,0.08);
+            border: 1px solid var(--wood-accent);
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        /* 텍스트 굵기 및 크기 대비 규칙 적용 (Bolder not Bigger) */
+        h2 {
+            font-family: 'Gaegu', sans-serif;
+            font-size: 2rem;
+            color: var(--wood-primary);
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+
+        /* 폰트 굵기 대비 강조 */
+        label {
+            display: block;
+            font-weight: 700; 
+            font-size: 0.9rem;
+            margin-bottom: 0.4rem;
+            color: var(--wood-primary);
+        }
+
+        input[type="text"], input[type="password"], select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid var(--wood-accent);
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-family: inherit;
+            font-size: 0.95rem;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: var(--wood-primary);
+        }
+
+        /* 버튼 컴포넌트 */
+        button {
+            width: 100%;
+            padding: 1rem;
+            background-color: var(--wood-primary);
+            color: var(--white);
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-family: 'Gaegu', sans
